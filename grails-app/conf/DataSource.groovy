@@ -1,9 +1,12 @@
 dataSource {
     pooled = true
     jmxExport = true
-    driverClassName = "org.h2.Driver"
-    username = "sa"
-    password = ""
+//    driverClassName = "org.h2.Driver"
+    driverClassName = "org.postgresql.Driver"
+    dialect = org.hibernate.dialect.PostgresPlusDialect
+    username = "ndunn"
+//    username = "sa"
+//    password = ""
 }
 hibernate {
     cache.use_second_level_cache = true
