@@ -95,7 +95,23 @@ environments {
     }
 }
 
-//grails.plugin.reveng.includeTables =
+grails.plugin.reveng.includeTables = [
+        "cvterm"
+        ,"cvtermdbxref"
+        ,"db"
+        ,"dbxref"
+        ,"feature"
+//        ,"feature_phenotype"
+//        ,"feature_genotype"
+        ,"feature_synonym"
+        ,"feature_relationship"
+        ,"featureloc"
+//        ,"genotype"
+        ,"organism"
+        ,"pub"
+        ,"pub_relationship"
+        ,"synonym"
+]
 
 // log4j configuration
 log4j.main = {
