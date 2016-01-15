@@ -6,22 +6,24 @@ class Contact {
 	String description
 	Cvterm cvterm
 
-	static hasMany = [arraydesigns: Arraydesign,
-	                  assays: Assay,
-	                  biomaterials: Biomaterial,
+	static hasMany = [
+//			arraydesigns: Arraydesign,
+//	                  assays: Assay,
+//	                  biomaterials: Biomaterial,
 	                  contactRelationshipsForObjectId: ContactRelationship,
 	                  contactRelationshipsForSubjectId: ContactRelationship,
 	                  ndExperimentContacts: NdExperimentContact,
 	                  projectContacts: ProjectContact,
-	                  quantifications: Quantification,
-	                  stockcollections: Stockcollection,
-	                  studies: Study]
+//	                  quantifications: Quantification,
+	                  stockcollections: Stockcollection
+//	                  studies: Study
+	]
 	static belongsTo = [Cvterm]
 
 	// TODO you have multiple hasMany references for class(es) [ContactRelationship] 
 	//      so you'll need to disambiguate them with the 'mappedBy' property:
-	static mappedBy = [contactRelationshipsForObjectId: "TODO",
-	                   contactRelationshipsForSubjectId: "TODO"]
+	static mappedBy = [contactRelationshipsForObjectId: "contactByObjectId",
+	                   contactRelationshipsForSubjectId: "contactBySubjectId"]
 
 	static mapping = {
 		id column: "contact_id", generator: "assigned"

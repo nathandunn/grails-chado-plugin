@@ -17,8 +17,8 @@ class Feature {
 	Cvterm cvterm
 
 	static hasMany = [analysisfeatures: Analysisfeature,
-	                  cellLineFeatures: CellLineFeature,
-	                  elements: Element,
+//	                  cellLineFeatures: CellLineFeature,
+//	                  elements: Element,
 	                  featureCvterms: FeatureCvterm,
 	                  featureDbxrefs: FeatureDbxref,
 	                  featureExpressions: FeatureExpression,
@@ -40,8 +40,9 @@ class Feature {
 	                  featurerangesForRightendfId: Featurerange,
 	                  featurerangesForRightstartfId: Featurerange,
 	                  libraryFeatures: LibraryFeature,
-	                  phylonodes: Phylonode,
-	                  studypropFeatures: StudypropFeature]
+	                  phylonodes: Phylonode
+//	                  studypropFeatures: StudypropFeature
+	]
 	static belongsTo = [Cvterm, Dbxref, Organism]
 
 	// TODO you have multiple hasMany references for class(es) [FeatureGenotype, FeatureRelationship, Featureloc, Featurepos, Featurerange] 

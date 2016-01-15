@@ -3,12 +3,12 @@ package org.gmod.chado
 class PhenotypeComparison {
 
 	Pub pub
-	Environment environmentByEnvironment2Id
 	Environment environmentByEnvironment1Id
-	Genotype genotypeByGenotype1Id
+	Environment environmentByEnvironment2Id
 	Organism organism
-	Phenotype phenotypeByPhenotype2Id
 	Phenotype phenotypeByPhenotype1Id
+	Phenotype phenotypeByPhenotype2Id
+	Genotype genotypeByGenotype1Id
 	Genotype genotypeByGenotype2Id
 
 	static hasMany = [phenotypeComparisonCvterms: PhenotypeComparisonCvterm]

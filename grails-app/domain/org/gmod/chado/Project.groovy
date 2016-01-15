@@ -5,7 +5,8 @@ class Project {
 	String name
 	String description
 
-	static hasMany = [assayProjects: AssayProject,
+	static hasMany = [
+//			assayProjects: AssayProject,
 	                  ndExperimentProjects: NdExperimentProject,
 	                  projectContacts: ProjectContact,
 	                  projectPubs: ProjectPub,
@@ -15,8 +16,8 @@ class Project {
 
 	// TODO you have multiple hasMany references for class(es) [ProjectRelationship] 
 	//      so you'll need to disambiguate them with the 'mappedBy' property:
-	static mappedBy = [projectRelationshipsForObjectProjectId: "TODO",
-	                   projectRelationshipsForSubjectProjectId: "TODO"]
+	static mappedBy = [projectRelationshipsForObjectProjectId: "projectByObjectProjectId",
+	                   projectRelationshipsForSubjectProjectId: "projectBySubjectProjectId"]
 
 	static mapping = {
 		id column: "project_id", generator: "assigned"

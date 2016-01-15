@@ -15,8 +15,10 @@ class Analysis {
 	static hasMany = [analysisOrganisms: AnalysisOrganism,
 	                  analysisfeatures: Analysisfeature,
 	                  analysisprops: Analysisprop,
-	                  phylotrees: Phylotree,
-	                  quantifications: Quantification]
+	                  phylotrees: Phylotree
+//					  ,
+//	                  quantifications: Quantification
+	]
 
 	static mapping = {
 		id column: "analysis_id", generator: "assigned"

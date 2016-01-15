@@ -7,15 +7,16 @@ class Dbxref {
 	Serializable searchableAccession
 	Db db
 
-	static hasMany = [arraydesigns: Arraydesign,
-	                  assays: Assay,
-	                  biomaterialDbxrefs: BiomaterialDbxref,
-	                  biomaterials: Biomaterial,
-	                  cellLineDbxrefs: CellLineDbxref,
+	static hasMany = [
+//			arraydesigns: Arraydesign,
+//	                  assays: Assay,
+//	                  biomaterialDbxrefs: BiomaterialDbxref,
+//	                  biomaterials: Biomaterial,
+//	                  cellLineDbxrefs: CellLineDbxref,
 	                  cvtermDbxrefs: CvtermDbxref,
 	                  cvterms: Cvterm,
 	                  dbxrefprops: Dbxrefprop,
-	                  elements: Element,
+//	                  elements: Element,
 	                  featureCvtermDbxrefs: FeatureCvtermDbxref,
 	                  featureDbxrefs: FeatureDbxref,
 	                  features: Feature,
@@ -25,11 +26,12 @@ class Dbxref {
 	                  organismDbxrefs: OrganismDbxref,
 	                  phylonodeDbxrefs: PhylonodeDbxref,
 	                  phylotrees: Phylotree,
-	                  protocols: Protocol,
+//	                  protocols: Protocol,
 	                  pubDbxrefs: PubDbxref,
 	                  stockDbxrefs: StockDbxref,
-	                  stocks: Stock,
-	                  studies: Study]
+	                  stocks: Stock
+//	                  studies: Study
+	]
 	static belongsTo = [Db]
 
 	static mapping = {

@@ -10,7 +10,8 @@ class Library {
 	Organism organism
 	Cvterm cvterm
 
-	static hasMany = [cellLineLibraries: CellLineLibrary,
+	static hasMany = [
+//			cellLineLibraries: CellLineLibrary,
 	                  libraryCvterms: LibraryCvterm,
 	                  libraryDbxrefs: LibraryDbxref,
 	                  libraryFeatures: LibraryFeature,

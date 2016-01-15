@@ -3,8 +3,8 @@ package org.gmod.chado
 class PhylonodeRelationship {
 
 	Integer rank
-	Phylonode phylonodeByObjectId
 	Phylotree phylotree
+	Phylonode phylonodeByObjectId
 	Phylonode phylonodeBySubjectId
 	Cvterm cvterm
 

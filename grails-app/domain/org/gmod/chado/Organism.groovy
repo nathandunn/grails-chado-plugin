@@ -9,8 +9,8 @@ class Organism {
 	String comment
 
 	static hasMany = [analysisOrganisms: AnalysisOrganism,
-	                  biomaterials: Biomaterial,
-	                  cellLines: CellLine,
+//	                  biomaterials: Biomaterial,
+//	                  cellLines: CellLine,
 	                  features: Feature,
 	                  libraries: Library,
 	                  organismDbxrefs: OrganismDbxref,

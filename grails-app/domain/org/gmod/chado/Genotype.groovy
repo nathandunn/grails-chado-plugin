@@ -19,8 +19,8 @@ class Genotype {
 
 	// TODO you have multiple hasMany references for class(es) [PhenotypeComparison] 
 	//      so you'll need to disambiguate them with the 'mappedBy' property:
-	static mappedBy = [phenotypeComparisonsForGenotype1Id: "TODO",
-	                   phenotypeComparisonsForGenotype2Id: "TODO"]
+	static mappedBy = [phenotypeComparisonsForGenotype1Id: "genotypeByGenotype1Id",
+	                   phenotypeComparisonsForGenotype2Id: "genotypeByGenotype2Id"]
 
 	static mapping = {
 		id column: "genotype_id", generator: "assigned"

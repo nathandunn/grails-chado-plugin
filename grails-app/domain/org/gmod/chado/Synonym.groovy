@@ -7,7 +7,8 @@ class Synonym {
 	Serializable searchableSynonymSgml
 	Cvterm cvterm
 
-	static hasMany = [cellLineSynonyms: CellLineSynonym,
+	static hasMany = [
+//			cellLineSynonyms: CellLineSynonym,
 	                  featureSynonyms: FeatureSynonym,
 	                  librarySynonyms: LibrarySynonym]
 	static belongsTo = [Cvterm]

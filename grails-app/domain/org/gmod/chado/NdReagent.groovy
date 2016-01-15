@@ -14,8 +14,8 @@ class NdReagent {
 
 	// TODO you have multiple hasMany references for class(es) [NdReagentRelationship] 
 	//      so you'll need to disambiguate them with the 'mappedBy' property:
-	static mappedBy = [ndReagentRelationshipsForObjectReagentId: "TODO",
-	                   ndReagentRelationshipsForSubjectReagentId: "TODO"]
+	static mappedBy = [ndReagentRelationshipsForObjectReagentId: "ndReagentByObjectReagentId",
+	                   ndReagentRelationshipsForSubjectReagentId: "ndReagentBySubjectReagentId"]
 
 	static mapping = {
 		id column: "nd_reagent_id", generator: "assigned"

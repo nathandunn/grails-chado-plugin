@@ -23,8 +23,8 @@ class Stock {
 
 	// TODO you have multiple hasMany references for class(es) [StockRelationship] 
 	//      so you'll need to disambiguate them with the 'mappedBy' property:
-	static mappedBy = [stockRelationshipsForObjectId: "TODO",
-	                   stockRelationshipsForSubjectId: "TODO"]
+	static mappedBy = [stockRelationshipsForObjectId: "stockByObjectId",
+	                   stockRelationshipsForSubjectId: "stockBySubjectId"]
 
 	static mapping = {
 		id column: "stock_id", generator: "assigned"

@@ -16,12 +16,13 @@ class Pub {
 	String pubplace
 	Cvterm cvterm
 
-	static hasMany = [cellLineCvterms: CellLineCvterm,
-	                  cellLineFeatures: CellLineFeature,
-	                  cellLineLibraries: CellLineLibrary,
-	                  cellLinePubs: CellLinePub,
-	                  cellLineSynonyms: CellLineSynonym,
-	                  cellLinepropPubs: CellLinepropPub,
+	static hasMany = [
+//			cellLineCvterms: CellLineCvterm,
+//	                  cellLineFeatures: CellLineFeature,
+//	                  cellLineLibraries: CellLineLibrary,
+//	                  cellLinePubs: CellLinePub,
+//	                  cellLineSynonyms: CellLineSynonym,
+//	                  cellLinepropPubs: CellLinepropPub,
 	                  expressionPubs: ExpressionPub,
 	                  featureCvtermPubs: FeatureCvtermPub,
 	                  featureCvterms: FeatureCvterm,
@@ -45,7 +46,7 @@ class Pub {
 	                  phylonodePubs: PhylonodePub,
 	                  phylotreePubs: PhylotreePub,
 	                  projectPubs: ProjectPub,
-	                  protocols: Protocol,
+//	                  protocols: Protocol,
 	                  pubDbxrefs: PubDbxref,
 	                  pubRelationshipsForObjectId: PubRelationship,
 	                  pubRelationshipsForSubjectId: PubRelationship,
@@ -55,14 +56,15 @@ class Pub {
 	                  stockPubs: StockPub,
 	                  stockRelationshipCvterms: StockRelationshipCvterm,
 	                  stockRelationshipPubs: StockRelationshipPub,
-	                  stockpropPubs: StockpropPub,
-	                  studies: Study]
+	                  stockpropPubs: StockpropPub
+//	                  studies: Study
+	]
 	static belongsTo = [Cvterm]
 
 	// TODO you have multiple hasMany references for class(es) [PubRelationship] 
 	//      so you'll need to disambiguate them with the 'mappedBy' property:
-	static mappedBy = [pubRelationshipsForObjectId: "TODO",
-	                   pubRelationshipsForSubjectId: "TODO"]
+	static mappedBy = [pubRelationshipsForObjectId: "pubByObjectId",
+	                   pubRelationshipsForSubjectId: "pubBySubjectId"]
 
 	static mapping = {
 		id column: "pub_id", generator: "assigned"

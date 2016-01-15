@@ -13,8 +13,9 @@ class Environment {
 
 	// TODO you have multiple hasMany references for class(es) [PhenotypeComparison] 
 	//      so you'll need to disambiguate them with the 'mappedBy' property:
-	static mappedBy = [phenotypeComparisonsForEnvironment1Id: "TODO",
-	                   phenotypeComparisonsForEnvironment2Id: "TODO"]
+	// TODO: double-chkeck
+	static mappedBy = [phenotypeComparisonsForEnvironment1Id: "environmentByEnvironment1Id",
+	                   phenotypeComparisonsForEnvironment2Id: "environmentByEnvironment2Id"]
 
 	static mapping = {
 		id column: "environment_id", generator: "assigned"

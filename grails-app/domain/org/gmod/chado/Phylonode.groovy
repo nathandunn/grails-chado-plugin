@@ -22,8 +22,8 @@ class Phylonode {
 
 	// TODO you have multiple hasMany references for class(es) [PhylonodeRelationship] 
 	//      so you'll need to disambiguate them with the 'mappedBy' property:
-	static mappedBy = [phylonodeRelationshipsForObjectId: "TODO",
-	                   phylonodeRelationshipsForSubjectId: "TODO"]
+	static mappedBy = [phylonodeRelationshipsForObjectId: "phylonodeByObjectId",
+	                   phylonodeRelationshipsForSubjectId: "phylonodeBySubjectId"]
 
 	static mapping = {
 		id column: "phylonode_id", generator: "assigned"
